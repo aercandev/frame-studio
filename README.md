@@ -216,8 +216,6 @@ Export requests include `mediaId`, `crop`, `text`, `output`, and a `clips` array
 
 ## References and notices
 
-Frame Studio's editor and export pipeline are independently implemented. Some interaction research used limited static observations of an installed CapCut package; see the [research notes](docs/capcut-analysis.md) for evidence and limitations. This project does not use CapCut's code, assets, or export engine and does not claim full feature parity.
-
 Preview and export text use the bundled Noto Sans font. Its license is included in [`apps/web/public/fonts/OFL.txt`](apps/web/public/fonts/OFL.txt).
 
 Upstream references: [yt-dlp](https://github.com/yt-dlp/yt-dlp), [YouTube EJS requirements](https://github.com/yt-dlp/yt-dlp/wiki/EJS), [FFmpeg](https://ffmpeg.org/ffmpeg-all.html), [Vite](https://vite.dev/guide/), and [Express](https://expressjs.com/).
