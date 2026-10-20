@@ -1,0 +1,30 @@
+{
+  "name": "frame-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local video editor for importing, editing, and exporting videos from files, direct links, Instagram, YouTube, and X.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aercandev/frame-studio.git"
+  },
+  "homepage": "https://github.com/aercandev/frame-studio#readme",
+  "bugs": {
+    "url": "https://github.com/aercandev/frame-studio/issues"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "setup:downloader": "node scripts/setup-downloader.mjs",
+    "dev": "node scripts/dev.mjs",
+    "dev:api": "npm run dev --workspace @insta-downloader/api",
+    "dev:web": "npm run dev --workspace @insta-downloader/web",
+    "build": "npm run build --workspace @insta-downloader/web",
+    "start": "npm run start --workspace @insta-downloader/api",
+    "test": "npm test --workspaces --if-present"
+  }
+}
